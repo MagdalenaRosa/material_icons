@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+li:before {
+  content: "\2713 ";
+  color: green;
+}
+li:nth-of-type(4)::before {
+  content: " \1F5D9 ";
+  color: red;
+}
+
+@media all and (min-width: 700px) {
+  ul {
+    flex-direction: row;
+  }
+}
